@@ -7,6 +7,7 @@
 //
 
 #import "MArtViewController.h"
+#import "MArtistHeaderView.h"
 
 @interface MArtViewController () <UITableViewDataSource, UITableViewDelegate>
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
@@ -30,7 +31,7 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     CGFloat top = self.scrollView.frame.size.height - self.tableView.frame.origin.y;
-    [self.tableView setContentInset:UIEdgeInsetsMake(top, 0.0, 0.0, 0.0)];
+    //[self.tableView setContentInset:UIEdgeInsetsMake(top, 0.0, 0.0, 0.0)];
 }
 
 - (void)didReceiveMemoryWarning
@@ -65,11 +66,10 @@
     return CellInfoIdentifier;
 }
 
+
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     UITableViewCell *cell;
-    if (indexPath.row == 0) {
-        cell = [tableView dequeueReusableCellWithIdentifier:[self cellIdentifierForInfo] forIndexPath:indexPath];
-    }
+    cell = [tableView dequeueReusableCellWithIdentifier:[self cellIdentifierForInfo] forIndexPath:indexPath];
     return cell;
 }
 
@@ -77,6 +77,17 @@
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
     return 400.0;
+}
+
+- (UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section {
+    CGFloat height = 220;//(self.scrollView.frame.size.height - self.tableView.frame.origin.y);
+    MArtistHeaderView *header = [[MArtistHeaderView alloc]initWithArt:self.art andHeight:height];
+    return header;
+}
+
+
+- (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section {
+    return 220;//(self.scrollView.frame.size.height - self.tableView.frame.origin.y);
 }
 
 @end

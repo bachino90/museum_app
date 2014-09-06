@@ -1,5 +1,5 @@
 //
-//  ArtistHeaderView.h
+//  MArtistHeaderView.h
 //  museum_app
 //
 //  Created by Emiliano Bivachi on 05/09/14.
@@ -9,8 +9,8 @@
 #import <UIKit/UIKit.h>
 #import "MArt.h"
 
-@interface ArtistHeaderView : UIView
+@interface MArtistHeaderView : UIView
 
-- (instancetype)initWithArt:(MArt *)art;
+- (instancetype)initWithArt:(MArt *)art andHeight:(CGFloat)height;
 
 @end

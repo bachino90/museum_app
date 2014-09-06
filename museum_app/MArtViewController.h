@@ -7,7 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "MArt.h"
 
 @interface MArtViewController : UIViewController
+
+@property (nonatomic, strong) MArt *art;
 
 @end

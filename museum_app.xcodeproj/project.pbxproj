@@ -37,7 +37,7 @@
 		0EED531419BA77C6009AF2A6 /* MArtView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0EED531319BA77C6009AF2A6 /* MArtView.m */; };
 		0EED531719BA7996009AF2A6 /* MArt.m in Sources */ = {isa = PBXBuildFile; fileRef = 0EED531619BA7996009AF2A6 /* MArt.m */; };
 		0EED531A19BA865B009AF2A6 /* MArtViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0EED531919BA865B009AF2A6 /* MArtViewController.m */; };
-		0EED531D19BA9DA6009AF2A6 /* ArtistHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0EED531C19BA9DA6009AF2A6 /* ArtistHeaderView.m */; };
+		0EED532019BAA3D9009AF2A6 /* MArtistHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0EED531F19BAA3D9009AF2A6 /* MArtistHeaderView.m */; };
 		EB71C19F19A42B8000DD1B5A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB71C19E19A42B8000DD1B5A /* Foundation.framework */; };
 		EB71C1A119A42B8000DD1B5A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB71C1A019A42B8000DD1B5A /* CoreGraphics.framework */; };
 		EB71C1A319A42B8000DD1B5A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB71C1A219A42B8000DD1B5A /* UIKit.framework */; };
@@ -102,8 +102,8 @@
 		0EED531619BA7996009AF2A6 /* MArt.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MArt.m; sourceTree = "<group>"; };
 		0EED531819BA865B009AF2A6 /* MArtViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MArtViewController.h; sourceTree = "<group>"; };
 		0EED531919BA865B009AF2A6 /* MArtViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MArtViewController.m; sourceTree = "<group>"; };
-		0EED531B19BA9DA6009AF2A6 /* ArtistHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ArtistHeaderView.h; sourceTree = "<group>"; };
-		0EED531C19BA9DA6009AF2A6 /* ArtistHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ArtistHeaderView.m; sourceTree = "<group>"; };
+		0EED531E19BAA3D9009AF2A6 /* MArtistHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MArtistHeaderView.h; sourceTree = "<group>"; };
+		0EED531F19BAA3D9009AF2A6 /* MArtistHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MArtistHeaderView.m; sourceTree = "<group>"; };
 		EB71C19B19A42B8000DD1B5A /* museum_app.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = museum_app.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EB71C19E19A42B8000DD1B5A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		EB71C1A019A42B8000DD1B5A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -270,8 +270,8 @@
 				0EED52F719BA46CE009AF2A6 /* MBeaconsViewController.m */,
 				0EED531819BA865B009AF2A6 /* MArtViewController.h */,
 				0EED531919BA865B009AF2A6 /* MArtViewController.m */,
-				0EED531B19BA9DA6009AF2A6 /* ArtistHeaderView.h */,
-				0EED531C19BA9DA6009AF2A6 /* ArtistHeaderView.m */,
+				0EED531E19BAA3D9009AF2A6 /* MArtistHeaderView.h */,
+				0EED531F19BAA3D9009AF2A6 /* MArtistHeaderView.m */,
 				0EED531219BA77C6009AF2A6 /* MArtView.h */,
 				0EED531319BA77C6009AF2A6 /* MArtView.m */,
 				0EED531519BA7996009AF2A6 /* MArt.h */,
@@ -428,13 +428,13 @@
 				0E817A2119BA150500ABC601 /* MViewController.m in Sources */,
 				0EED52FE19BA52A0009AF2A6 /* GBeacon.m in Sources */,
 				0EED52FD19BA52A0009AF2A6 /* GBeaconManager.m in Sources */,
-				0EED531D19BA9DA6009AF2A6 /* ArtistHeaderView.m in Sources */,
 				0E817A1E19BA13B900ABC601 /* FYXViewController.m in Sources */,
 				0EED531719BA7996009AF2A6 /* MArt.m in Sources */,
 				0EED531419BA77C6009AF2A6 /* MArtView.m in Sources */,
 				EB71C1AF19A42B8000DD1B5A /* AppDelegate.m in Sources */,
 				0EED52F819BA46CE009AF2A6 /* MBeaconsViewController.m in Sources */,
 				0EED531A19BA865B009AF2A6 /* MArtViewController.m in Sources */,
+				0EED532019BAA3D9009AF2A6 /* MArtistHeaderView.m in Sources */,
 				EB71C1AB19A42B8000DD1B5A /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
