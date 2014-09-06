@@ -7,12 +7,22 @@
 //
 
 #import "AppDelegate.h"
+#import <ContextCore/QLContextCoreConnector.h>
+#import <FYX/FYX.h>
 
 @implementation AppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    // Override point for customization after application launch.
+    QLContextCoreConnector *connector = [QLContextCoreConnector new];
+    [connector enableFromViewController:self.window.rootViewController success:^
+     {
+         NSLog(@"Gimbal enabled");
+     } failure:^(NSError *error) {
+         NSLog(@"Failed to initialize gimbal %@", error);
+     }];
+    [FYX setAppId:@"5fb4dad8e03e10fb54878d76084dac619077b7e065f8f9a523da0566387c1435" appSecret:@"d60c27d07b8bd06076a219bcc56d00622165ac5075519f4f5cfafb5f7cec4ef3" callbackUrl:@"combaxlabsmuseumapp://authcode"];
+    
     return YES;
 }
 							

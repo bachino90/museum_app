@@ -7,6 +7,37 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0E8179FE19BA0F6500ABC601 /* CoreBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E8179FD19BA0F6500ABC601 /* CoreBluetooth.framework */; };
+		0E817A0119BA0F6F00ABC601 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E8179FF19BA0F6F00ABC601 /* CoreData.framework */; };
+		0E817A0219BA0F6F00ABC601 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E817A0019BA0F6F00ABC601 /* CoreLocation.framework */; };
+		0E817A0419BA0F7600ABC601 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E817A0319BA0F7600ABC601 /* MapKit.framework */; };
+		0E817A0619BA0F8300ABC601 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E817A0519BA0F8300ABC601 /* Security.framework */; };
+		0E817A0819BA0F8C00ABC601 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E817A0719BA0F8C00ABC601 /* libz.dylib */; };
+		0E817A1B19BA117400ABC601 /* UserContext.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0E817A1A19BA117400ABC601 /* UserContext.plist */; };
+		0E817A1E19BA13B900ABC601 /* FYXViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E817A1D19BA13B900ABC601 /* FYXViewController.m */; };
+		0E817A2119BA150500ABC601 /* MViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E817A2019BA150500ABC601 /* MViewController.m */; };
+		0EED52F019BA4433009AF2A6 /* Common.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0EED52E619BA4433009AF2A6 /* Common.framework */; };
+		0EED52F119BA4433009AF2A6 /* ContextCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0EED52E819BA4433009AF2A6 /* ContextCore.framework */; };
+		0EED52F219BA4433009AF2A6 /* ContextLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0EED52EA19BA4433009AF2A6 /* ContextLocation.framework */; };
+		0EED52F319BA4433009AF2A6 /* DataModels.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 0EED52EC19BA4433009AF2A6 /* DataModels.bundle */; };
+		0EED52F419BA4433009AF2A6 /* FYX.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0EED52ED19BA4433009AF2A6 /* FYX.framework */; };
+		0EED52F519BA4433009AF2A6 /* NetworkServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0EED52EF19BA4433009AF2A6 /* NetworkServices.framework */; };
+		0EED52F819BA46CE009AF2A6 /* MBeaconsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0EED52F719BA46CE009AF2A6 /* MBeaconsViewController.m */; };
+		0EED52FD19BA52A0009AF2A6 /* GBeaconManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 0EED52FA19BA52A0009AF2A6 /* GBeaconManager.m */; };
+		0EED52FE19BA52A0009AF2A6 /* GBeacon.m in Sources */ = {isa = PBXBuildFile; fileRef = 0EED52FC19BA52A0009AF2A6 /* GBeacon.m */; };
+		0EED530819BA5DF3009AF2A6 /* malba_light_bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0EED52FF19BA5DF3009AF2A6 /* malba_light_bold.ttf */; };
+		0EED530919BA5DF3009AF2A6 /* malba_light_italic_bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0EED530019BA5DF3009AF2A6 /* malba_light_italic_bold.ttf */; };
+		0EED530A19BA5DF3009AF2A6 /* malba_light_italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0EED530119BA5DF3009AF2A6 /* malba_light_italic.ttf */; };
+		0EED530B19BA5DF3009AF2A6 /* malba_light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0EED530219BA5DF3009AF2A6 /* malba_light.ttf */; };
+		0EED530C19BA5DF3009AF2A6 /* malba_plain-webfont.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0EED530319BA5DF3009AF2A6 /* malba_plain-webfont.ttf */; };
+		0EED530D19BA5DF3009AF2A6 /* malba_regular_bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0EED530419BA5DF3009AF2A6 /* malba_regular_bold.ttf */; };
+		0EED530E19BA5DF3009AF2A6 /* malba_regular_italic_bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0EED530519BA5DF3009AF2A6 /* malba_regular_italic_bold.ttf */; };
+		0EED530F19BA5DF3009AF2A6 /* malba_regular_italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0EED530619BA5DF3009AF2A6 /* malba_regular_italic.ttf */; };
+		0EED531019BA5DF3009AF2A6 /* malba_regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0EED530719BA5DF3009AF2A6 /* malba_regular.ttf */; };
+		0EED531419BA77C6009AF2A6 /* MArtView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0EED531319BA77C6009AF2A6 /* MArtView.m */; };
+		0EED531719BA7996009AF2A6 /* MArt.m in Sources */ = {isa = PBXBuildFile; fileRef = 0EED531619BA7996009AF2A6 /* MArt.m */; };
+		0EED531A19BA865B009AF2A6 /* MArtViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0EED531919BA865B009AF2A6 /* MArtViewController.m */; };
+		0EED531D19BA9DA6009AF2A6 /* ArtistHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0EED531C19BA9DA6009AF2A6 /* ArtistHeaderView.m */; };
 		EB71C19F19A42B8000DD1B5A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB71C19E19A42B8000DD1B5A /* Foundation.framework */; };
 		EB71C1A119A42B8000DD1B5A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB71C1A019A42B8000DD1B5A /* CoreGraphics.framework */; };
 		EB71C1A319A42B8000DD1B5A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB71C1A219A42B8000DD1B5A /* UIKit.framework */; };
@@ -14,7 +45,6 @@
 		EB71C1AB19A42B8000DD1B5A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EB71C1AA19A42B8000DD1B5A /* main.m */; };
 		EB71C1AF19A42B8000DD1B5A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EB71C1AE19A42B8000DD1B5A /* AppDelegate.m */; };
 		EB71C1B219A42B8000DD1B5A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EB71C1B019A42B8000DD1B5A /* Main.storyboard */; };
-		EB71C1B519A42B8000DD1B5A /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EB71C1B419A42B8000DD1B5A /* ViewController.m */; };
 		EB71C1B719A42B8000DD1B5A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EB71C1B619A42B8000DD1B5A /* Images.xcassets */; };
 		EB71C1BE19A42B8000DD1B5A /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB71C1BD19A42B8000DD1B5A /* XCTest.framework */; };
 		EB71C1BF19A42B8000DD1B5A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB71C19E19A42B8000DD1B5A /* Foundation.framework */; };
@@ -34,6 +64,46 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0E8179FD19BA0F6500ABC601 /* CoreBluetooth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreBluetooth.framework; path = System/Library/Frameworks/CoreBluetooth.framework; sourceTree = SDKROOT; };
+		0E8179FF19BA0F6F00ABC601 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		0E817A0019BA0F6F00ABC601 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		0E817A0319BA0F7600ABC601 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		0E817A0519BA0F8300ABC601 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		0E817A0719BA0F8C00ABC601 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		0E817A1A19BA117400ABC601 /* UserContext.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = UserContext.plist; sourceTree = "<group>"; };
+		0E817A1C19BA13B900ABC601 /* FYXViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FYXViewController.h; sourceTree = "<group>"; };
+		0E817A1D19BA13B900ABC601 /* FYXViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FYXViewController.m; sourceTree = "<group>"; };
+		0E817A1F19BA150500ABC601 /* MViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MViewController.h; sourceTree = "<group>"; };
+		0E817A2019BA150500ABC601 /* MViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MViewController.m; sourceTree = "<group>"; };
+		0EED52E619BA4433009AF2A6 /* Common.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Common.framework; sourceTree = "<group>"; };
+		0EED52E819BA4433009AF2A6 /* ContextCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ContextCore.framework; sourceTree = "<group>"; };
+		0EED52EA19BA4433009AF2A6 /* ContextLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ContextLocation.framework; sourceTree = "<group>"; };
+		0EED52EC19BA4433009AF2A6 /* DataModels.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = DataModels.bundle; sourceTree = "<group>"; };
+		0EED52ED19BA4433009AF2A6 /* FYX.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FYX.framework; sourceTree = "<group>"; };
+		0EED52EF19BA4433009AF2A6 /* NetworkServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = NetworkServices.framework; sourceTree = "<group>"; };
+		0EED52F619BA46CE009AF2A6 /* MBeaconsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBeaconsViewController.h; sourceTree = "<group>"; };
+		0EED52F719BA46CE009AF2A6 /* MBeaconsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBeaconsViewController.m; sourceTree = "<group>"; };
+		0EED52F919BA52A0009AF2A6 /* GBeaconManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GBeaconManager.h; sourceTree = "<group>"; };
+		0EED52FA19BA52A0009AF2A6 /* GBeaconManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GBeaconManager.m; sourceTree = "<group>"; };
+		0EED52FB19BA52A0009AF2A6 /* GBeacon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GBeacon.h; sourceTree = "<group>"; };
+		0EED52FC19BA52A0009AF2A6 /* GBeacon.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GBeacon.m; sourceTree = "<group>"; };
+		0EED52FF19BA5DF3009AF2A6 /* malba_light_bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = malba_light_bold.ttf; sourceTree = "<group>"; };
+		0EED530019BA5DF3009AF2A6 /* malba_light_italic_bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = malba_light_italic_bold.ttf; sourceTree = "<group>"; };
+		0EED530119BA5DF3009AF2A6 /* malba_light_italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = malba_light_italic.ttf; sourceTree = "<group>"; };
+		0EED530219BA5DF3009AF2A6 /* malba_light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = malba_light.ttf; sourceTree = "<group>"; };
+		0EED530319BA5DF3009AF2A6 /* malba_plain-webfont.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "malba_plain-webfont.ttf"; sourceTree = "<group>"; };
+		0EED530419BA5DF3009AF2A6 /* malba_regular_bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = malba_regular_bold.ttf; sourceTree = "<group>"; };
+		0EED530519BA5DF3009AF2A6 /* malba_regular_italic_bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = malba_regular_italic_bold.ttf; sourceTree = "<group>"; };
+		0EED530619BA5DF3009AF2A6 /* malba_regular_italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = malba_regular_italic.ttf; sourceTree = "<group>"; };
+		0EED530719BA5DF3009AF2A6 /* malba_regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = malba_regular.ttf; sourceTree = "<group>"; };
+		0EED531219BA77C6009AF2A6 /* MArtView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MArtView.h; sourceTree = "<group>"; };
+		0EED531319BA77C6009AF2A6 /* MArtView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MArtView.m; sourceTree = "<group>"; };
+		0EED531519BA7996009AF2A6 /* MArt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MArt.h; sourceTree = "<group>"; };
+		0EED531619BA7996009AF2A6 /* MArt.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MArt.m; sourceTree = "<group>"; };
+		0EED531819BA865B009AF2A6 /* MArtViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MArtViewController.h; sourceTree = "<group>"; };
+		0EED531919BA865B009AF2A6 /* MArtViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MArtViewController.m; sourceTree = "<group>"; };
+		0EED531B19BA9DA6009AF2A6 /* ArtistHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ArtistHeaderView.h; sourceTree = "<group>"; };
+		0EED531C19BA9DA6009AF2A6 /* ArtistHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ArtistHeaderView.m; sourceTree = "<group>"; };
 		EB71C19B19A42B8000DD1B5A /* museum_app.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = museum_app.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EB71C19E19A42B8000DD1B5A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		EB71C1A019A42B8000DD1B5A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -45,8 +115,6 @@
 		EB71C1AD19A42B8000DD1B5A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		EB71C1AE19A42B8000DD1B5A /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		EB71C1B119A42B8000DD1B5A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		EB71C1B319A42B8000DD1B5A /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		EB71C1B419A42B8000DD1B5A /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		EB71C1B619A42B8000DD1B5A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		EB71C1BC19A42B8000DD1B5A /* museum_appTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = museum_appTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		EB71C1BD19A42B8000DD1B5A /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
@@ -60,7 +128,18 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0E817A0819BA0F8C00ABC601 /* libz.dylib in Frameworks */,
+				0E817A0619BA0F8300ABC601 /* Security.framework in Frameworks */,
+				0EED52F419BA4433009AF2A6 /* FYX.framework in Frameworks */,
+				0E817A0419BA0F7600ABC601 /* MapKit.framework in Frameworks */,
+				0EED52F219BA4433009AF2A6 /* ContextLocation.framework in Frameworks */,
+				0E817A0119BA0F6F00ABC601 /* CoreData.framework in Frameworks */,
+				0EED52F119BA4433009AF2A6 /* ContextCore.framework in Frameworks */,
+				0E817A0219BA0F6F00ABC601 /* CoreLocation.framework in Frameworks */,
+				0E8179FE19BA0F6500ABC601 /* CoreBluetooth.framework in Frameworks */,
+				0EED52F519BA4433009AF2A6 /* NetworkServices.framework in Frameworks */,
 				EB71C1A119A42B8000DD1B5A /* CoreGraphics.framework in Frameworks */,
+				0EED52F019BA4433009AF2A6 /* Common.framework in Frameworks */,
 				EB71C1A319A42B8000DD1B5A /* UIKit.framework in Frameworks */,
 				EB71C19F19A42B8000DD1B5A /* Foundation.framework in Frameworks */,
 			);
@@ -79,6 +158,63 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0EED52E519BA4433009AF2A6 /* Common.embeddedframework */ = {
+			isa = PBXGroup;
+			children = (
+				0EED52E619BA4433009AF2A6 /* Common.framework */,
+			);
+			path = Common.embeddedframework;
+			sourceTree = "<group>";
+		};
+		0EED52E719BA4433009AF2A6 /* ContextCore.embeddedframework */ = {
+			isa = PBXGroup;
+			children = (
+				0EED52E819BA4433009AF2A6 /* ContextCore.framework */,
+			);
+			path = ContextCore.embeddedframework;
+			sourceTree = "<group>";
+		};
+		0EED52E919BA4433009AF2A6 /* ContextLocation.embeddedframework */ = {
+			isa = PBXGroup;
+			children = (
+				0EED52EA19BA4433009AF2A6 /* ContextLocation.framework */,
+				0EED52EB19BA4433009AF2A6 /* Resources */,
+			);
+			path = ContextLocation.embeddedframework;
+			sourceTree = "<group>";
+		};
+		0EED52EB19BA4433009AF2A6 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				0EED52EC19BA4433009AF2A6 /* DataModels.bundle */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		0EED52EE19BA4433009AF2A6 /* NetworkServices.embeddedframework */ = {
+			isa = PBXGroup;
+			children = (
+				0EED52EF19BA4433009AF2A6 /* NetworkServices.framework */,
+			);
+			path = NetworkServices.embeddedframework;
+			sourceTree = "<group>";
+		};
+		0EED531119BA5DFB009AF2A6 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				0EED52FF19BA5DF3009AF2A6 /* malba_light_bold.ttf */,
+				0EED530019BA5DF3009AF2A6 /* malba_light_italic_bold.ttf */,
+				0EED530119BA5DF3009AF2A6 /* malba_light_italic.ttf */,
+				0EED530219BA5DF3009AF2A6 /* malba_light.ttf */,
+				0EED530319BA5DF3009AF2A6 /* malba_plain-webfont.ttf */,
+				0EED530419BA5DF3009AF2A6 /* malba_regular_bold.ttf */,
+				0EED530519BA5DF3009AF2A6 /* malba_regular_italic_bold.ttf */,
+				0EED530619BA5DF3009AF2A6 /* malba_regular_italic.ttf */,
+				0EED530719BA5DF3009AF2A6 /* malba_regular.ttf */,
+			);
+			name = Fonts;
+			sourceTree = "<group>";
+		};
 		EB71C19219A42B8000DD1B5A = {
 			isa = PBXGroup;
 			children = (
@@ -101,10 +237,21 @@
 		EB71C19D19A42B8000DD1B5A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				0EED52E519BA4433009AF2A6 /* Common.embeddedframework */,
+				0EED52E719BA4433009AF2A6 /* ContextCore.embeddedframework */,
+				0EED52E919BA4433009AF2A6 /* ContextLocation.embeddedframework */,
+				0EED52EE19BA4433009AF2A6 /* NetworkServices.embeddedframework */,
+				0EED52ED19BA4433009AF2A6 /* FYX.framework */,
+				0E817A0519BA0F8300ABC601 /* Security.framework */,
+				0E817A0319BA0F7600ABC601 /* MapKit.framework */,
+				0E8179FF19BA0F6F00ABC601 /* CoreData.framework */,
+				0E817A0019BA0F6F00ABC601 /* CoreLocation.framework */,
+				0E8179FD19BA0F6500ABC601 /* CoreBluetooth.framework */,
 				EB71C19E19A42B8000DD1B5A /* Foundation.framework */,
 				EB71C1A019A42B8000DD1B5A /* CoreGraphics.framework */,
 				EB71C1A219A42B8000DD1B5A /* UIKit.framework */,
 				EB71C1BD19A42B8000DD1B5A /* XCTest.framework */,
+				0E817A0719BA0F8C00ABC601 /* libz.dylib */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -115,8 +262,24 @@
 				EB71C1AD19A42B8000DD1B5A /* AppDelegate.h */,
 				EB71C1AE19A42B8000DD1B5A /* AppDelegate.m */,
 				EB71C1B019A42B8000DD1B5A /* Main.storyboard */,
-				EB71C1B319A42B8000DD1B5A /* ViewController.h */,
-				EB71C1B419A42B8000DD1B5A /* ViewController.m */,
+				0E817A1C19BA13B900ABC601 /* FYXViewController.h */,
+				0E817A1D19BA13B900ABC601 /* FYXViewController.m */,
+				0E817A1F19BA150500ABC601 /* MViewController.h */,
+				0E817A2019BA150500ABC601 /* MViewController.m */,
+				0EED52F619BA46CE009AF2A6 /* MBeaconsViewController.h */,
+				0EED52F719BA46CE009AF2A6 /* MBeaconsViewController.m */,
+				0EED531819BA865B009AF2A6 /* MArtViewController.h */,
+				0EED531919BA865B009AF2A6 /* MArtViewController.m */,
+				0EED531B19BA9DA6009AF2A6 /* ArtistHeaderView.h */,
+				0EED531C19BA9DA6009AF2A6 /* ArtistHeaderView.m */,
+				0EED531219BA77C6009AF2A6 /* MArtView.h */,
+				0EED531319BA77C6009AF2A6 /* MArtView.m */,
+				0EED531519BA7996009AF2A6 /* MArt.h */,
+				0EED531619BA7996009AF2A6 /* MArt.m */,
+				0EED52F919BA52A0009AF2A6 /* GBeaconManager.h */,
+				0EED52FA19BA52A0009AF2A6 /* GBeaconManager.m */,
+				0EED52FB19BA52A0009AF2A6 /* GBeacon.h */,
+				0EED52FC19BA52A0009AF2A6 /* GBeacon.m */,
 				EB71C1B619A42B8000DD1B5A /* Images.xcassets */,
 				EB71C1A519A42B8000DD1B5A /* Supporting Files */,
 			);
@@ -126,7 +289,9 @@
 		EB71C1A519A42B8000DD1B5A /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				0EED531119BA5DFB009AF2A6 /* Fonts */,
 				EB71C1A619A42B8000DD1B5A /* museum_app-Info.plist */,
+				0E817A1A19BA117400ABC601 /* UserContext.plist */,
 				EB71C1A719A42B8000DD1B5A /* InfoPlist.strings */,
 				EB71C1AA19A42B8000DD1B5A /* main.m */,
 				EB71C1AC19A42B8000DD1B5A /* museum_app-Prefix.pch */,
@@ -228,9 +393,20 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0E817A1B19BA117400ABC601 /* UserContext.plist in Resources */,
+				0EED531019BA5DF3009AF2A6 /* malba_regular.ttf in Resources */,
 				EB71C1B719A42B8000DD1B5A /* Images.xcassets in Resources */,
 				EB71C1A919A42B8000DD1B5A /* InfoPlist.strings in Resources */,
+				0EED530C19BA5DF3009AF2A6 /* malba_plain-webfont.ttf in Resources */,
+				0EED530A19BA5DF3009AF2A6 /* malba_light_italic.ttf in Resources */,
+				0EED530F19BA5DF3009AF2A6 /* malba_regular_italic.ttf in Resources */,
+				0EED52F319BA4433009AF2A6 /* DataModels.bundle in Resources */,
+				0EED530B19BA5DF3009AF2A6 /* malba_light.ttf in Resources */,
+				0EED530D19BA5DF3009AF2A6 /* malba_regular_bold.ttf in Resources */,
+				0EED530E19BA5DF3009AF2A6 /* malba_regular_italic_bold.ttf in Resources */,
+				0EED530819BA5DF3009AF2A6 /* malba_light_bold.ttf in Resources */,
 				EB71C1B219A42B8000DD1B5A /* Main.storyboard in Resources */,
+				0EED530919BA5DF3009AF2A6 /* malba_light_italic_bold.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -249,8 +425,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EB71C1B519A42B8000DD1B5A /* ViewController.m in Sources */,
+				0E817A2119BA150500ABC601 /* MViewController.m in Sources */,
+				0EED52FE19BA52A0009AF2A6 /* GBeacon.m in Sources */,
+				0EED52FD19BA52A0009AF2A6 /* GBeaconManager.m in Sources */,
+				0EED531D19BA9DA6009AF2A6 /* ArtistHeaderView.m in Sources */,
+				0E817A1E19BA13B900ABC601 /* FYXViewController.m in Sources */,
+				0EED531719BA7996009AF2A6 /* MArt.m in Sources */,
+				0EED531419BA77C6009AF2A6 /* MArtView.m in Sources */,
 				EB71C1AF19A42B8000DD1B5A /* AppDelegate.m in Sources */,
+				0EED52F819BA46CE009AF2A6 /* MBeaconsViewController.m in Sources */,
+				0EED531A19BA865B009AF2A6 /* MArtViewController.m in Sources */,
 				EB71C1AB19A42B8000DD1B5A /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -376,6 +560,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Common.embeddedframework",
+					"$(PROJECT_DIR)/ContextCore.embeddedframework",
+					"$(PROJECT_DIR)/ContextLocation.embeddedframework",
+					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/NetworkServices.embeddedframework",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "museum_app/museum_app-Prefix.pch";
 				INFOPLIST_FILE = "museum_app/museum_app-Info.plist";
@@ -389,6 +581,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Common.embeddedframework",
+					"$(PROJECT_DIR)/ContextCore.embeddedframework",
+					"$(PROJECT_DIR)/ContextLocation.embeddedframework",
+					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/NetworkServices.embeddedframework",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "museum_app/museum_app-Prefix.pch";
 				INFOPLIST_FILE = "museum_app/museum_app-Info.plist";
@@ -456,6 +656,7 @@
 				EB71C1CF19A42B8000DD1B5A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		EB71C1D019A42B8000DD1B5A /* Build configuration list for PBXNativeTarget "museum_appTests" */ = {
 			isa = XCConfigurationList;
@@ -464,6 +665,7 @@
 				EB71C1D219A42B8000DD1B5A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
