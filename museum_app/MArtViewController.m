@@ -8,14 +8,19 @@
 
 #import "MArtViewController.h"
 #import "MArtistHeaderView.h"
+#import "MInfoTableViewCell.h"
 
 @interface MArtViewController () <UITableViewDataSource, UITableViewDelegate>
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
-@property (weak, nonatomic) IBOutlet UIScrollView *scrollView;
-
+@property (nonatomic) CGFloat headerViewHeight;
+@property (nonatomic, strong) MArtistHeaderView *headerView;
 @end
 
-@implementation MArtViewController
+@implementation MArtViewController {
+    dispatch_once_t onceToken;
+    NSMutableDictionary *rowHeightCache;
+    MInfoTableViewCell *sizingCell;
+}
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -30,14 +35,20 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    CGFloat top = self.scrollView.frame.size.height - self.tableView.frame.origin.y;
-    //[self.tableView setContentInset:UIEdgeInsetsMake(top, 0.0, 0.0, 0.0)];
+    rowHeightCache = [NSMutableDictionary dictionary];
+    self.headerView = [[MArtistHeaderView alloc]initWithArt:self.art andWidth:self.tableView.frame.size.width];
+    //UIImageView *artImage = [UIImage imageNamed:artImage];
+    //self.tableView.tableHeaderView = artImage;
 }
 
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+- (BOOL)prefersStatusBarHidden {
+    return YES;
 }
 
 /*
@@ -66,28 +77,44 @@
     return CellInfoIdentifier;
 }
 
-
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    UITableViewCell *cell;
-    cell = [tableView dequeueReusableCellWithIdentifier:[self cellIdentifierForInfo] forIndexPath:indexPath];
+    MInfoTableViewCell *cell = (MInfoTableViewCell *)[tableView dequeueReusableCellWithIdentifier:[self cellIdentifierForInfo] forIndexPath:indexPath];
+    cell.artInfo = self.art.info;
+    [cell setNeedsLayout];
+    [cell layoutIfNeeded];
     return cell;
 }
 
 #pragma mark UITableViewCell Delegate
 
-- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
-    return 400.0;
-}
-
 - (UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section {
-    CGFloat height = 220;//(self.scrollView.frame.size.height - self.tableView.frame.origin.y);
-    MArtistHeaderView *header = [[MArtistHeaderView alloc]initWithArt:self.art andHeight:height];
-    return header;
+    return self.headerView;
 }
 
 
 - (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section {
-    return 220;//(self.scrollView.frame.size.height - self.tableView.frame.origin.y);
+    return self.headerView.frame.size.height;
+}
+
+- (void)adjustSizingCellWidthToTableWidth {
+    sizingCell.frame = CGRectMake(0, 0, CGRectGetWidth(self.tableView.bounds), 0);
+}
+
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath;
+{
+    dispatch_once(&onceToken, ^{
+        sizingCell = (MInfoTableViewCell *)[self.tableView dequeueReusableCellWithIdentifier:[self cellIdentifierForInfo]];
+        //[self adjustSizingCellWidthToTableWidth];
+    });
+    NSString *index = @"Info";
+    if (rowHeightCache[index] == nil) {
+        sizingCell.artInfo = self.art.info;
+        CGFloat rowHeight = sizingCell.requiredCellHeight;
+        [sizingCell setNeedsLayout];
+        [sizingCell layoutIfNeeded];
+        rowHeightCache[index] = @(rowHeight);
+    }
+    return [rowHeightCache[index] floatValue];
 }
 
 @end

@@ -16,6 +16,11 @@
 		0E817A1B19BA117400ABC601 /* UserContext.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0E817A1A19BA117400ABC601 /* UserContext.plist */; };
 		0E817A1E19BA13B900ABC601 /* FYXViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E817A1D19BA13B900ABC601 /* FYXViewController.m */; };
 		0E817A2119BA150500ABC601 /* MViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E817A2019BA150500ABC601 /* MViewController.m */; };
+		0EE5507419BDF0AD00DCA87F /* UIFont+Malba.m in Sources */ = {isa = PBXBuildFile; fileRef = 0EE5507319BDF0AD00DCA87F /* UIFont+Malba.m */; };
+		0EE5507719BDF0BC00DCA87F /* UIColor+Malba.m in Sources */ = {isa = PBXBuildFile; fileRef = 0EE5507619BDF0BC00DCA87F /* UIColor+Malba.m */; };
+		0EE5507A19BDF0C900DCA87F /* UILabel+Malba.m in Sources */ = {isa = PBXBuildFile; fileRef = 0EE5507919BDF0C900DCA87F /* UILabel+Malba.m */; };
+		0EE5507E19BE160800DCA87F /* MInfoTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0EE5507D19BE160800DCA87F /* MInfoTableViewCell.m */; };
+		0EE5508119BE208600DCA87F /* DashLineView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0EE5508019BE208600DCA87F /* DashLineView.m */; };
 		0EED52F019BA4433009AF2A6 /* Common.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0EED52E619BA4433009AF2A6 /* Common.framework */; };
 		0EED52F119BA4433009AF2A6 /* ContextCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0EED52E819BA4433009AF2A6 /* ContextCore.framework */; };
 		0EED52F219BA4433009AF2A6 /* ContextLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0EED52EA19BA4433009AF2A6 /* ContextLocation.framework */; };
@@ -75,6 +80,16 @@
 		0E817A1D19BA13B900ABC601 /* FYXViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FYXViewController.m; sourceTree = "<group>"; };
 		0E817A1F19BA150500ABC601 /* MViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MViewController.h; sourceTree = "<group>"; };
 		0E817A2019BA150500ABC601 /* MViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MViewController.m; sourceTree = "<group>"; };
+		0EE5507219BDF0AD00DCA87F /* UIFont+Malba.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIFont+Malba.h"; sourceTree = "<group>"; };
+		0EE5507319BDF0AD00DCA87F /* UIFont+Malba.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIFont+Malba.m"; sourceTree = "<group>"; };
+		0EE5507519BDF0BC00DCA87F /* UIColor+Malba.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+Malba.h"; sourceTree = "<group>"; };
+		0EE5507619BDF0BC00DCA87F /* UIColor+Malba.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+Malba.m"; sourceTree = "<group>"; };
+		0EE5507819BDF0C900DCA87F /* UILabel+Malba.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UILabel+Malba.h"; sourceTree = "<group>"; };
+		0EE5507919BDF0C900DCA87F /* UILabel+Malba.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UILabel+Malba.m"; sourceTree = "<group>"; };
+		0EE5507C19BE160800DCA87F /* MInfoTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MInfoTableViewCell.h; sourceTree = "<group>"; };
+		0EE5507D19BE160800DCA87F /* MInfoTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MInfoTableViewCell.m; sourceTree = "<group>"; };
+		0EE5507F19BE208600DCA87F /* DashLineView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DashLineView.h; sourceTree = "<group>"; };
+		0EE5508019BE208600DCA87F /* DashLineView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DashLineView.m; sourceTree = "<group>"; };
 		0EED52E619BA4433009AF2A6 /* Common.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Common.framework; sourceTree = "<group>"; };
 		0EED52E819BA4433009AF2A6 /* ContextCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ContextCore.framework; sourceTree = "<group>"; };
 		0EED52EA19BA4433009AF2A6 /* ContextLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ContextLocation.framework; sourceTree = "<group>"; };
@@ -158,6 +173,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0EE5507B19BDF1DE00DCA87F /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				0EE5507219BDF0AD00DCA87F /* UIFont+Malba.h */,
+				0EE5507319BDF0AD00DCA87F /* UIFont+Malba.m */,
+				0EE5507519BDF0BC00DCA87F /* UIColor+Malba.h */,
+				0EE5507619BDF0BC00DCA87F /* UIColor+Malba.m */,
+				0EE5507819BDF0C900DCA87F /* UILabel+Malba.h */,
+				0EE5507919BDF0C900DCA87F /* UILabel+Malba.m */,
+			);
+			name = Categories;
+			sourceTree = "<group>";
+		};
 		0EED52E519BA4433009AF2A6 /* Common.embeddedframework */ = {
 			isa = PBXGroup;
 			children = (
@@ -272,6 +300,10 @@
 				0EED531919BA865B009AF2A6 /* MArtViewController.m */,
 				0EED531E19BAA3D9009AF2A6 /* MArtistHeaderView.h */,
 				0EED531F19BAA3D9009AF2A6 /* MArtistHeaderView.m */,
+				0EE5507F19BE208600DCA87F /* DashLineView.h */,
+				0EE5508019BE208600DCA87F /* DashLineView.m */,
+				0EE5507C19BE160800DCA87F /* MInfoTableViewCell.h */,
+				0EE5507D19BE160800DCA87F /* MInfoTableViewCell.m */,
 				0EED531219BA77C6009AF2A6 /* MArtView.h */,
 				0EED531319BA77C6009AF2A6 /* MArtView.m */,
 				0EED531519BA7996009AF2A6 /* MArt.h */,
@@ -280,6 +312,7 @@
 				0EED52FA19BA52A0009AF2A6 /* GBeaconManager.m */,
 				0EED52FB19BA52A0009AF2A6 /* GBeacon.h */,
 				0EED52FC19BA52A0009AF2A6 /* GBeacon.m */,
+				0EE5507B19BDF1DE00DCA87F /* Categories */,
 				EB71C1B619A42B8000DD1B5A /* Images.xcassets */,
 				EB71C1A519A42B8000DD1B5A /* Supporting Files */,
 			);
@@ -425,8 +458,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0EE5507E19BE160800DCA87F /* MInfoTableViewCell.m in Sources */,
 				0E817A2119BA150500ABC601 /* MViewController.m in Sources */,
 				0EED52FE19BA52A0009AF2A6 /* GBeacon.m in Sources */,
+				0EE5507419BDF0AD00DCA87F /* UIFont+Malba.m in Sources */,
 				0EED52FD19BA52A0009AF2A6 /* GBeaconManager.m in Sources */,
 				0E817A1E19BA13B900ABC601 /* FYXViewController.m in Sources */,
 				0EED531719BA7996009AF2A6 /* MArt.m in Sources */,
@@ -434,8 +469,11 @@
 				EB71C1AF19A42B8000DD1B5A /* AppDelegate.m in Sources */,
 				0EED52F819BA46CE009AF2A6 /* MBeaconsViewController.m in Sources */,
 				0EED531A19BA865B009AF2A6 /* MArtViewController.m in Sources */,
+				0EE5507A19BDF0C900DCA87F /* UILabel+Malba.m in Sources */,
+				0EE5508119BE208600DCA87F /* DashLineView.m in Sources */,
 				0EED532019BAA3D9009AF2A6 /* MArtistHeaderView.m in Sources */,
 				EB71C1AB19A42B8000DD1B5A /* main.m in Sources */,
+				0EE5507719BDF0BC00DCA87F /* UIColor+Malba.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

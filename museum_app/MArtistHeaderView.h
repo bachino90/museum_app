@@ -11,6 +11,7 @@
 
 @interface MArtistHeaderView : UIView
 
-- (instancetype)initWithArt:(MArt *)art andHeight:(CGFloat)height;
+- (instancetype)initWithArt:(MArt *)art andWidth:(CGFloat)width;
++ (CGFloat)heightForArt:(MArt *)art andWidth:(CGFloat)width;
 
 @end

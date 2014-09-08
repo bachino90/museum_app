@@ -13,6 +13,9 @@
 #ifdef __OBJC__
     #import <UIKit/UIKit.h>
     #import <Foundation/Foundation.h>
+    #import "UIColor+Malba.h"
+    #import "UIFont+Malba.h"
+    #import "UILabel+Malba.h"
     #define NUMBER_OF_RECORDS 20
     #define RSSI_ONE_METER -77.0f
 #endif
