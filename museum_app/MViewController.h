@@ -6,8 +6,8 @@
 //  Copyright (c) 2014 Emiliano Bivachi. All rights reserved.
 //
 
-#import "FYXViewController.h"
+#import <UIKit/UIKit.h>
 
-@interface MViewController : FYXViewController
+@interface MViewController : UIViewController
 
 @end

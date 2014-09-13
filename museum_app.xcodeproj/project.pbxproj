@@ -14,7 +14,6 @@
 		0E817A0619BA0F8300ABC601 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E817A0519BA0F8300ABC601 /* Security.framework */; };
 		0E817A0819BA0F8C00ABC601 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E817A0719BA0F8C00ABC601 /* libz.dylib */; };
 		0E817A1B19BA117400ABC601 /* UserContext.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0E817A1A19BA117400ABC601 /* UserContext.plist */; };
-		0E817A1E19BA13B900ABC601 /* FYXViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E817A1D19BA13B900ABC601 /* FYXViewController.m */; };
 		0E817A2119BA150500ABC601 /* MViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E817A2019BA150500ABC601 /* MViewController.m */; };
 		0EE5507419BDF0AD00DCA87F /* UIFont+Malba.m in Sources */ = {isa = PBXBuildFile; fileRef = 0EE5507319BDF0AD00DCA87F /* UIFont+Malba.m */; };
 		0EE5507719BDF0BC00DCA87F /* UIColor+Malba.m in Sources */ = {isa = PBXBuildFile; fileRef = 0EE5507619BDF0BC00DCA87F /* UIColor+Malba.m */; };
@@ -76,8 +75,6 @@
 		0E817A0519BA0F8300ABC601 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		0E817A0719BA0F8C00ABC601 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
 		0E817A1A19BA117400ABC601 /* UserContext.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = UserContext.plist; sourceTree = "<group>"; };
-		0E817A1C19BA13B900ABC601 /* FYXViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FYXViewController.h; sourceTree = "<group>"; };
-		0E817A1D19BA13B900ABC601 /* FYXViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FYXViewController.m; sourceTree = "<group>"; };
 		0E817A1F19BA150500ABC601 /* MViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MViewController.h; sourceTree = "<group>"; };
 		0E817A2019BA150500ABC601 /* MViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MViewController.m; sourceTree = "<group>"; };
 		0EE5507219BDF0AD00DCA87F /* UIFont+Malba.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIFont+Malba.h"; sourceTree = "<group>"; };
@@ -290,8 +287,6 @@
 				EB71C1AD19A42B8000DD1B5A /* AppDelegate.h */,
 				EB71C1AE19A42B8000DD1B5A /* AppDelegate.m */,
 				EB71C1B019A42B8000DD1B5A /* Main.storyboard */,
-				0E817A1C19BA13B900ABC601 /* FYXViewController.h */,
-				0E817A1D19BA13B900ABC601 /* FYXViewController.m */,
 				0E817A1F19BA150500ABC601 /* MViewController.h */,
 				0E817A2019BA150500ABC601 /* MViewController.m */,
 				0EED52F619BA46CE009AF2A6 /* MBeaconsViewController.h */,
@@ -463,7 +458,6 @@
 				0EED52FE19BA52A0009AF2A6 /* GBeacon.m in Sources */,
 				0EE5507419BDF0AD00DCA87F /* UIFont+Malba.m in Sources */,
 				0EED52FD19BA52A0009AF2A6 /* GBeaconManager.m in Sources */,
-				0E817A1E19BA13B900ABC601 /* FYXViewController.m in Sources */,
 				0EED531719BA7996009AF2A6 /* MArt.m in Sources */,
 				0EED531419BA77C6009AF2A6 /* MArtView.m in Sources */,
 				EB71C1AF19A42B8000DD1B5A /* AppDelegate.m in Sources */,

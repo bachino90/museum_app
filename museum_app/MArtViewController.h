@@ -9,8 +9,15 @@
 #import <UIKit/UIKit.h>
 #import "MArt.h"
 
+@class MArtViewController;
+
+@protocol MArtViewControllerDelegate <NSObject>
+- (void)dismissMArtViewController:(MArtViewController *)mavc;
+@end
+
 @interface MArtViewController : UIViewController
 
+@property (nonatomic, weak) id <MArtViewControllerDelegate> delegate;
 @property (nonatomic, strong) MArt *art;
 
 @end
